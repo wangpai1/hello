@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mail.css" type="text/css">
+</head>
+<body>
+    <div class="t">
+        <div class="h">
+            <div class="logo"><img src="login_logo.png" /></div>
+            <a href=""  class="help">帮助</a>
+        </div>
+    </div>
+    <div class="page_body">
+        <img src="login_bg_02.jpg" alt="">
+        <div class="formstyle"> 
+            <div class="zhd">
+                <p>账号登陆</p>
+            </div>
+            <div class="css1">
+                <p>用户登录</p>
+                <form action="">
+                    <input type="text" class="text" id="username" placeholder="用户名" />
+                    <input type="password" class="text" id="userpwd" placeholder="密码" />
+                </form>
+                <div class="css2">
+                    <p class="fl">学生选择@stu.swpu.edu.cn</p>
+                    <p class="fr">忘记密码</p>
+                </div>
+                <div class="login ">
+                    <input type="submit"  name="submit" class="btn"  value="登  录"  onclick="jump()" />
+                </div>
+            </div>
+            
+        </div>
+        <div class="b">
+            西南石油大学
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    var username=document.getElementById("username");
+    var pwd=document.getElementById("userpwd");
+    if(pwd==""){
+        alert("请填写密码");
+    }
+    function jump(){
+        if(pwd.value==""){
+        alert("请填写密码");
+    }else{
+        if(username.value=="tom" && pwd.value=="123"){
+           window.location.href="http://mail.swpu.edu.cn/";
+        }else{
+         alert("用户名或密码错误")
+        }
+    }
+    }
+</script>
+</html>
